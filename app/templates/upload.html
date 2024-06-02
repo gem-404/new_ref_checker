@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block title %}Document Reader - Upload{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/upload.css') }}">
+    <!-- <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css"> -->
+{% endblock %}
+
+{% block content %}
+
+    <form action="/readfile" method="POST" enctype="multipart/form-data">
+        <label for="myfile">Select a Docx File:</label>
+        <input type="file" name="myfile" accept=".docx">
+        <br>
+        <input type="submit" value="Upload">
+    </form>
+
+{% endblock %}

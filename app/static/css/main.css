@@ -1,0 +1,105 @@
+/* Reset styles */
+body, h1, h2, h3, p, ul, ol, li, form, fieldset, input, textarea, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+nav {
+    background-color: #333;
+    padding: 28px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Form styles */
+input[type="text"],
+input[type="password"],
+input[type="file"],
+input[type="email"] {
+    margin-left: 4%;
+    width: 90%;
+    display: block;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Media query for phone screens */
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px; /* Decrease padding for smaller screens */
+    }
+
+    input[type="text"],
+    input[type="password"],
+    input[type="file"],
+    input[type="email"],
+    button {
+        margin-bottom: 8px; /* Decrease margin-bottom for smaller screens */
+        padding: 8px; /* Decrease padding for smaller screens */
+        font-size: 0.9em; /* Decrease font size for smaller screens */
+    }
+
+    button {
+        font-size: 0.9em; /* Decrease font size for smaller screens */
+    }
+}
+
+/* Media query for phone screens */
+@media screen and (min-width: 300px) {
+
+    nav a {
+        font-size: 2.3em;
+    }
+
+    .container {
+        font-size: 1.2em;
+    }
+
+    .header {
+        font-size: 2.5em;
+    }
+
+}

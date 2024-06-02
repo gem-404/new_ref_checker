@@ -1,0 +1,14 @@
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    max-width: 80ch;
+    margin: 0;
+}
+
+/* Media query for phone screens */
+@media screen and (max-width: 600px) {
+    pre {
+        max-width: 100%; /* Adjust max-width to fill the container on smaller screens */
+        margin: 0 10px; /* Add horizontal margin for better spacing on smaller screens */
+    }
+}

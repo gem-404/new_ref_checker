@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>{% block title %}Document Reader{% endblock %}</title>
+    <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='img/favicon.ico') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <!-- <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css"> -->
+    {% block extra_css %}{% endblock %}
+</head>
+
+<body>
+    <nav>
+        <a href="/">Home</a>
+        <a href="/login">Login</a>
+        <a href="/signup">Sign Up</a>
+        <a href="/upload">Upload</a>
+        <a href="" id="dark-mode-toggle">🌓</a>
+    </nav>
+    <div class="header">
+        <h2>{% block header %}Welcome to Document Reader{% endblock %}</h2>
+    </div>
+    {% block content %}{% endblock %}
+
+</body>
+
+</html>

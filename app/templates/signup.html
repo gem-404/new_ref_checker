@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}Document Reader - Sign Up{% endblock %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/signup.css') }}">
+    <!-- <link rel="stylesheet" href="https://matcha.mizu.sh/matcha.css"> -->
+{% endblock %}
+
+{% block content %}
+
+    <div class="container">
+        <form class="signup-form" action='/signing' method='POST'>
+            <h2>Sign Up</h2>
+            <div class="input-group">
+                <input type="text" name="username" id="username" placeholder="Username" required>
+            </div>
+            <div class="input-group">
+                <input type="email" name="email" id="email" placeholder="Email" required>
+            </div>
+            <div class="input-group">
+                <input type="password" name="password" id="password" placeholder="Password" required>
+            </div>
+            <div class="input-group">
+                <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password" required>
+            </div>
+            <button type="submit" class="btn">Sign Up</button>
+        </form>
+    </div>
+
+{% endblock %}

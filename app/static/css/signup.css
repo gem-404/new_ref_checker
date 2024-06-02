@@ -1,0 +1,67 @@
+/* Signup form styles */
+.signup-form {
+    max-width: 70%;
+    height: 50%;
+    background-color: #fff;
+    padding: 20px; /* Decrease padding for smaller screens */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.signup-form h2 {
+    margin-bottom: 15px; /* Decrease margin-bottom for smaller screens */
+    color: #333;
+}
+
+.signup-form .input-group {
+    margin-bottom: 15px; /* Decrease margin-bottom for smaller screens */
+}
+
+.signup-form .input-group input {
+    padding: 8px; /* Decrease padding for smaller screens */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.9em; /* Decrease font size for smaller screens */
+}
+
+.signup-form .btn {
+    padding: 8px; /* Decrease padding for smaller screens */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.signup-form .btn:hover {
+    background-color: #0056b3;
+}
+
+/* Media query for phone screens */
+@media screen and (max-width: 600px) {
+    .signup-form {
+        padding: 15px; /* Further decrease padding for smaller screens */
+        max-width: 90%;
+    }
+
+    .signup-form h2 {
+        margin-bottom: 10px; /* Further decrease margin-bottom for smaller screens */
+    }
+
+    .signup-form .input-group {
+        margin-bottom: 10px; /* Further decrease margin-bottom for smaller screens */
+    }
+
+    .signup-form .input-group input {
+        padding: 6px; /* Further decrease padding for smaller screens */
+        font-size: 0.8em; /* Further decrease font size for smaller screens */
+    }
+
+    .signup-form .btn {
+        padding: 6px; /* Further decrease padding for smaller screens */
+        font-size: 0.8em; /* Further decrease font size for smaller screens */
+    }
+}

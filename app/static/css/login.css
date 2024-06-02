@@ -1,0 +1,88 @@
+.login-form {
+    max-width: 65%;
+    background-color: #fff;
+    padding: 20px; /* Decrease padding for smaller screens */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    margin-left: 15%;
+}
+
+.login-form h2 {
+    margin-bottom: 10px; /* Decrease margin for smaller screens */
+    color: #333;
+    font-size: 1.2em; /* Decrease heading font size for smaller screens */
+}
+
+.input-group {
+    margin-bottom: 10px; /* Decrease margin for smaller screens */
+}
+
+.input-group input {
+    /* width: 100%; */
+    padding: 8px; /* Decrease padding for smaller screens */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.9em; /* Decrease font size for smaller screens */
+}
+
+.btn {
+    /* width: 100%; */
+    padding: 8px; /* Decrease padding for smaller screens */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Media query for phone screens */
+@media screen and (max-width: 600px) {
+    .login-form {
+        padding: 10px; /* Further decrease padding for smaller screens */
+        max-width: 90%; /* Adjust maximum width for smaller screens */
+        margin-left: 2%;
+    }
+
+    .login-form h2 {
+        font-size: 1em; /* Decrease heading font size for smaller screens */
+    }
+
+    .input-group input {
+        padding: 6px; /* Further decrease padding for smaller screens */
+        font-size: 0.8em; /* Further decrease font size for smaller screens */
+    }
+
+    .btn {
+        padding: 6px; /* Further decrease padding for smaller screens */
+        font-size: 0.8em; /* Further decrease font size for smaller screens */
+    }
+}
+
+@media screen and (min-width: 300px) {
+    .login-form {
+        padding: 10px; /* Further decrease padding for smaller screens */
+        max-width: 90%; /* Adjust maximum width for smaller screens */
+        margin-left: 2%;
+    }
+
+    .login-form h2 {
+        font-size: 1em; /* Decrease heading font size for smaller screens */
+    }
+
+    .input-group input {
+        padding: 6px; /* Further decrease padding for smaller screens */
+        font-size: 0.8em; /* Further decrease font size for smaller screens */
+    }
+
+    .btn {
+        padding: 6px; /* Further decrease padding for smaller screens */
+        font-size: 0.8em; /* Further decrease font size for smaller screens */
+    }
+}
